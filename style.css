@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.logo{
+    min-height: 50px;
+    min-width: 150px;
+    height: 50px;
+    width: 150px;
+    /* width: 20vw; */
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.search-bar{
+    position: relative;
+    width: 45vw;
+}
+
+.search-bar #search-icon{
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.search-bar input{
+    padding: 8px;
+    width: 40vw;
+    margin: 20px;
+    background-color: whitesmoke;
+    border: none;
+    font-size: large;
+    border-radius: 5px;
+    padding-left: 40px;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 50px; */
+}
+
+.nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.nav ul li{
+    list-style: none;
+    padding: 12px 20px;
+    margin: 0px 13px;
+    position: relative;
+}
+
+.nav ul li:hover{
+    cursor: pointer;
+}
+
+
+.nav ul li .nav-icon{
+    position: absolute;
+    /* top: 12px; */
+    left: -3px;
+}
+
+main{
+    min-height: calc(100vh - 75px - 150px);
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main .categories{
+    /* height: 30vh; */
+    background-color: white;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 80px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+main .categories a{
+    margin: 0px 5px;
+}
+
+main .categories .category {
+    height: 130px;
+    min-width: 150px;
+    width: min-content;
+}
+
+main .categories .category .img{
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main .categories .category .img img{
+    width: 100%;
+    height: 100%;
+}
+
+main .categories .category .des{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+main .slider{
+    height: 250px;
+    margin: 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+main .slider img{
+    height: 100%;
+    width: 100%;
+}
+
+main .slider .slide{
+    position: absolute;
+    transition-duration: 1s;
+}
+
+main .slider .btn{
+    position: absolute;
+    padding: 30px 15px;
+    border: none;
+    background-color: white;
+    top: 90px;
+}
+
+main .slider #slider-left-btn{
+    left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+main .slider #slider-right-btn{
+    right: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.items-section{
+    height: 350px;
+    background-color: white;
+    margin: 20px 20px;
+}
+
+.items-section .title{
+    height: 80px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.items-section .cards{
+    height: 270px;
+    display: flex;
+    padding: 0px 15px;
+    align-items: center;
+    overflow: scroll;
+}
+
+.items-section .cards .card{
+    height: 250px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 3px;
+    margin: 0px 10px;
+}
+
+.items-section .cards .card .item-img{
+    height: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.items-section .cards .card .item-img:hover{
+    padding: 0;
+}
+.items-section .cards .card .item-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.items-section .cards .card .item-des{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-section .cards .card .item-des .additional-des{
+    font-weight:600;
+} 
+
+footer{
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1280px){
+    .search-bar{
+        width: 25vw;
+    }   
+    .search-bar input{
+        width: 20vw;
+    }
+    main .categories{
+        padding: 0px 70px;
+    }
+    main .slider{
+        height: 200px;
+    }
+    main .slider .btn{
+        top: 65px;
+    }
+}
+
+@media screen and (max-width: 956px){
+    .search-bar{
+        display: none;
+    }
+
+    main .categories{
+        padding: 0px 40px;
+    }
+
+    .nav ul li a p{
+        display: none;
+    }
+    main .slider{
+        height: 160px;
+    }
+    main .slider .btn{
+        top: 45px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        padding: 0px 20px;
+    }
+    .logo{
+        width: 30vw;
+    }
+    .nav ul li{
+        margin: 0px 5px;
+        padding: 7px 15px;
+    }
+    main .categories a{
+        margin: 10px 5px;
+    }
+    main .categories{
+        padding: 0px 0px;
+    }
+    main .slider{
+        height: 120px;
+    }
+    main .slider .btn{
+        top: 40px;
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .logo{
+        min-width: 100px;
+    }
+    .nav ul li {
+        margin: 0px 2px;
+        padding: 5px 12px;
+    }
+
+    main .categories .category {
+        min-width: 120px;
+    }
+
+    main .categories .category .des {
+        padding: 0px;
+        font-size: smaller;
+    }
+    main .slider{
+        height: 60px;
+    }
+    main .slider .btn{
+        top: 15px;
+        padding: 8px 5px;
+    }
+}

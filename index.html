@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="./images/logo.png" alt="logo"></div>
+        <div class="search-bar"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i><input type="text"
+                placeholder="Search for Products, Brands and More"></div>
+        <div class="nav">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-user nav-icon"></i>
+                        <p>Login</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping nav-icon"></i>
+                        <p>Cart</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-shop nav-icon"></i>
+                        <p>Become a seller</p>
+                    </a></li>
+                <li><a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="categories">
+            <a href="">
+                <div class="category">
+                    <div class="img">
+                        <img src="./images/category1.png" alt="Grocery">
+                    </div>
+                    <span class="des">Grocery</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="category">
+                    <div class="img">
+                        <img src="./images/category2.png" alt="Mobiles">
+                    </div>
+                    <span class="des">Mobiles</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="category">
+                    <div class="img">
+                        <img src="./images/category3.png" alt="Fashion">
+                    </div>
+                    <span class="des">Fashion</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="category">
+                    <div class="img">
+                        <img src="./images/category4.png" alt="Electronics">
+                    </div>
+                    <span class="des">Electronics</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="category">
+                    <div class="img">
+                        <img src="./images/category5.png" alt="Home & Furniture">
+                    </div>
+                    <span class="des">Home & Furniture</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="category">
+                    <div class="img">
+                        <img src="./images/category6.png" alt="Travel">
+                    </div>
+                    <span class="des">Travel</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="category">
+                    <div class="img">
+                        <img src="./images/category7.png" alt="Toys & More">
+                    </div>
+                    <span class="des">Toys & More</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="category">
+                    <div class="img">
+                        <img src="./images/category8.png" alt="Two Wheelers">
+                    </div>
+                    <span class="des">Two Wheelers</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="slider">
+            <a href=""><img class="slide" src="./images/slide1.png" alt="Slide-1"></a>
+            <a href=""><img class="slide" src="./images/slide2.png" alt="Slide-2"></a>
+            <a href=""><img class="slide" src="./images/slide3.png" alt="Slide-3"></a>
+            <button id="slider-left-btn" class="btn" onClick="slidePrev()"><i
+                    class="fa-solid fa-chevron-left fa-sm"></i></button>
+            <button id="slider-right-btn" class="btn" onClick="slideNext()"><i
+                    class="fa-solid fa-chevron-right fa-sm"></i></button>
+        </div>
+
+        <div class="items-section">
+            <div class="title">Beauty, Food, Toys & more</div>
+            <div class="cards">
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/items-img1.png" alt="Remote Control Car"></div>
+                        <div class="item-des">
+                            <span class="name">Remote Control Toys</span>
+                            <span class="additional-des">Up to 80% Off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/items-img2.png" alt="Helmet"></div>
+                        <div class="item-des">
+                            <span class="name">Rider Helmets</span>
+                            <span class="additional-des">From ₹699</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/items-img3.png" alt="Tyres"></div>
+                        <div class="item-des">
+                            <span class="name">Tyres</span>
+                            <span class="additional-des">From ₹799</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/items-img4.png" alt="Gym Essentials"></div>
+                        <div class="item-des">
+                            <span class="name">Gym Essentials</span>
+                            <span class="additional-des">Up to 70% Off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/items-img5.png" alt="Microphones"></div>
+                        <div class="item-des">
+                            <span class="name">Microphones</span>
+                            <span class="additional-des">Up to 70% Off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/items-img6.png" alt="Car pressure washer"></div>
+                        <div class="item-des">
+                            <span class="name">Car pressure washer</span>
+                            <span class="additional-des">Up to 65% Off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/items-img7.png" alt="Food Spreads"></div>
+                        <div class="item-des">
+                            <span class="name">Food Spreads</span>
+                            <span class="additional-des">Up to 75% Off</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="items-section">
+            <div class="title">Sports, Healthcare & more</div>
+            <div class="cards">
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/2items-img1.png" alt="Car Lubricant"></div>
+                        <div class="item-des">
+                            <span class="name">Car Lubricant</span>
+                            <span class="additional-des">Upto 45% Off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/2items-img2.png" alt="Self Help Books"></div>
+                        <div class="item-des">
+                            <span class="name">Self Help Books</span>
+                            <span class="additional-des">Min 20% off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/2items-img3.png" alt="Tea Powder"></div>
+                        <div class="item-des">
+                            <span class="name">Tea Powder</span>
+                            <span class="additional-des">Upto 75% off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/2items-img4.png" alt="Musical Toys"></div>
+                        <div class="item-des">
+                            <span class="name">Musical Toys</span>
+                            <span class="additional-des">Under ₹199</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/2items-img5.png" alt="Puzzles & Cubes"></div>
+                        <div class="item-des">
+                            <span class="name">Puzzles & Cubes</span>
+                            <span class="additional-des">From ₹79</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/2items-img6.png" alt="Honey"></div>
+                        <div class="item-des">
+                            <span class="name">Honey</span>
+                            <span class="additional-des">Up to 75% Off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/2items-img7.png" alt="Sport Watch"></div>
+                        <div class="item-des">
+                            <span class="name">Sport Watch</span>
+                            <span class="additional-des">Min 60% Off</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card">
+                        <div class="item-img"><img src="./images/2items-img8.png" alt="Men's Jackets"></div>
+                        <div class="item-des">
+                            <span class="name">Men's Jackets</span>
+                            <span class="additional-des">Min 50% Off</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 flipkart. all rights reserved</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
